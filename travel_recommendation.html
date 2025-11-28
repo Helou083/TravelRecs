@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>TravelRecs</title>
-</head>
-<body>
-    <nav>
-        <div class="home">
-            <a href="home">Home</a>
-            <a href="about_us">About Us</a>
-            <a href="contact_us">Contact Us</a>
-        </div>
-        <div class="Search_bar">
-            <input type="destination" placeholder="Enter a destination or Keyword">
-            <button id="search">Search</button>
-            <button id="clear">Clear</button>
-        </div>
-    </nav>
-   
-</body>
+    <head>
+        <title>TravelRecs</title>
+        <!--add css stylesheet here-->
+        <link rel="stylesheet" href="./travel_recommendation.css"/>
+    </head>
+    <body>
+        <nav> <!--Navignation Bar-->
+            <div class="topmenu">
+                <h1>Travel Recs</h1>
+                <img id="logo" src="" size=30px> <!--add logo-->
+                <a class="topmenu" href="#home">Home</a>
+                <a class="topmenu" href="#about_us">About Us</a>
+                <a class="topmenu" href="#contact_us">Contact Us</a>
+            </div>
+            <div class="search_bar"> <!--destination lookup-->
+                <input type="text" placeholder="Enter a destination or Keyword">
+                <button id="search" onclick="search()">Search</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </nav>
+        <section id="home" class="container">
+            <div>
+                <h1>Explore dream destination</h1>
+                <p>Blurb about how great this website is </p>
+            </div>
+        </section>
+        <section id="about_us" class="container">
+            <div>
+                <h1>About Us</h1>
+                <p>been in the business since 1999</p>
+                <h4>Our Team of Experts</h4>
+            </div>
+            <div id="barbara_profile">
+                <h5>Barbara</h5>
+                <p>Account Manager</p>
+                <img id="Barbara" href="" size=100px alt="Barbara's Picture"> <!--add pic-->
+            </div>
+            <div id="jeff_profile">
+                <h5>Jeff</h5>
+                <p>Travel Coordinator and Customer Success</p>
+                <img id="Jeff" href="" size=100px alt="Jeff's Picture"> <!--add pic-->
+            </div>
+            <div id="malik_profile">
+                <h5>Malik</h5>
+                <p>Account Manager<p>
+                <img id="Malik" href="" size=100px alt="Malik's Picture"> <!--add pic-->
+            </div>
+        </section>
+
+        <section id="contact_us" class="container">
+                <fieldset>
+                    <h1>Contact Us</h1>
+                    <div class="name_form">
+                        <h6>Name<h6> 
+                        <input type="text" id=Name placeholder="Please enter your name">
+                    </div>
+                    <div class="email_form">
+                        <h6>Email Address<h6>
+                        <input type="text" id=email placeholder="Please enter your email ex:name@gmail.com"></br>
+                    </div>
+                    <div class="message_form">
+                        <h6>What's your message?<h6>
+                        <textarea id="message_input" cols="50" row="10" placeholder="message"></textarea></br>
+                        <button id="submit" onclick="submit_message()">Submit</button>
+                </fieldset>
+        </section>
+
+
+   <!--add external js file here-->
+
+    </body>
 </html>
