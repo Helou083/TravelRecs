@@ -5,6 +5,11 @@ body {
     background-image: url(./2147811269.jpg);
     size: 100%;
 }
+h1 {
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 nav {
     background-color: lightcoral;
     width: 100%;
@@ -20,11 +25,22 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    image-resolution: 100px;
+}
+.topmenu {
+    align-items: right;
+    text-align: center;
+    display: flex;
+    gap: 5px;
 }
 .search_bar {
     display: flex;
-    align-items: left;
+    align-items: right;
     gap: 10px;
+}
+.search_bar input {
+    flex: 1;
+
 }
 #destination {
     float: right;
@@ -42,26 +58,25 @@ nav {
     border: solid black 2px;
     border-radius: 5px;
 }
-h1 {
-    font-weight: bolder;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.about_us{
+    display: flex;
+    align-items: right;
+    gap: 5px;
 }
-.name_form {
-    width: 100%;
-    float: left;
-    border: solid lightcoral 2px;
+.our_team {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.contact_us {
+    margin-top: 20cm;
+    margin-bottom: 20cm;
+    padding: 20cm;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: solid lightcoral 5px;
     border-radius: 10px;
 }
-.email_form {
-    width: 100%;
-    float: center;
-    border: solid lightcoral 2px;
-    border-radius: 10px;
-}
-.message_form {
-    width: 100%;
-    float: right;
-    border: solid lightcoral 2px;
-    border-radius: 10px;
-}
+

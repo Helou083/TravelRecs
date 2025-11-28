@@ -9,17 +9,30 @@
         <nav> <!--Navignation Bar-->
             <div class="topdiv">
                 <h1>Travel Recs</h1>
-                <img id="logo" src="" size=30px> <!--add logo-->
+                <img id="logo" src="https://www.freepik.com/free-vector/airplane-with-circle-flight-path_148768013.htm#fromView=search&page=1&position=1&uuid=70993abb-7058-4d99-a217-e46af3013098&query=Airplane" size=100px alt="airplaine_vector"/> <!--logo-->
                 <a class="topmenu" href="#home">Home</a>
                 <a class="topmenu" href="#about_us">About Us</a>
                 <a class="topmenu" href="#contact_us">Contact Us</a>
             </div>
-            <div class="search_bar"> <!--destination lookup-->
+        </nav>
+        <aside>
+            <div class="social_media">
+                <a class="social_link" id="facebook" href="https://www.facebook.com/" target="blank">
+                <img src="./icons8-facebook-50.png" alt="facebook_icon"></a>
+                <a class="social_link" id="X" href="https://www.x.com/" target="blank">
+                <img src="./icons8-twitter-50.png" size="20px" alt="x_logo"/></a>
+                <a class="social_link" id="Insta" href="https://www.instagram.com/" target="blank">
+                <img src="./icons8-instagram-50.png" size="20px" alt="inta_logo"/></a>
+                <a class="social_link" id="YouTube" href="https://www.youtube.com/" target="blank">
+                <img src="./icons8-youtube-50.png" size="20px" alt="youtube_logo"/></a>
+            </div>
+        </aside>
+        <div class="search_bar"> <!--destination lookup-->
                 <input type="text" id="destination" placeholder="Enter a destination or Keyword">
                 <button id="search" onclick="search()">Search</button>
                 <button id="reset" onclick="reset()">Reset</button>
-            </div>
-        </nav>
+        </div>
+
         <section id="home" class="container">
             <div>
                 <h1>Explore dream destination</h1>
@@ -30,22 +43,27 @@
             <div>
                 <h1>About Us</h1>
                 <p>been in the business since 1999</p>
-                <h4>Our Team of Experts</h4>
+
             </div>
-            <div id="barbara_profile">
-                <h5>Barbara</h5>
-                <p>Account Manager</p>
+            <div class="our_team">
+                <div id="worker">Barbara
                 <img id="Barbara" href="Barbara.png" size=200px alt="Barbara's Picture"> <!--add pic-->
-            </div>
-            <div id="jeff_profile">
-                <h5>Jeff</h5>
-                <p>Travel Coordinator and Customer Success</p>
-                <img id="Jeff" href="Jeff_fictional.png" size=200px alt="Jeff's Picture"> <!--add pic-->
-            </div>
-            <div id="malik_profile">
-                <h5>Malik</h5>
-                <p>Account Manager<p>
+                <p>Account Manager</p>
+                <button id="contact_b" onclick="contactBarbara()">Contact Barbara</button>
+                </div>
+
+                <div id="worker">Malik
                 <img id="Malik" href="" size=200px alt="Malik's Picture"> <!--add pic-->
+                <p>Account Manager</p>
+                <button id="contact_m" onclick="contactMalik()">Contact Malik</button>
+                </div>
+
+                <div id="worker">Jeff
+                <img id="Jeff" href="Jeff_fictional.png" size=200px alt="Jeff's Picture"> <!--add pic-->
+                <p>Travel Coordinator and Customer Success</p>
+                <button id="contact_j" onclick="contactJeff()">Contact Jeff</button>
+                </div>
+
             </div>
         </section>
 
@@ -55,15 +73,15 @@
                     <h1>Contact Us</h1>
                     </div>
                     <div class="name_form">
-                        <h6>Name<h6> 
+                        <h4>Name</h4> 
                         <input type="text" id=Name placeholder="Please enter your name"><br>
                     </div>
                     <div class="email_form">
-                        <h6>Email Address<h6>
-                        <input type="text" id=email placeholder="Please enter your email ex:name@gmail.com"><br>
+                        <h4>Email Address</h4>
+                        <input type="text" id=email placeholder="Please enter your email"><br>
                     </div>
                     <div class="message_form">
-                        <h6>What's your message?<h6>
+                        <h4>What's your message?</h4>
                         <textarea id="message_input" cols="50" row="10" placeholder="message"></textarea><br>
                         <button id="submit" onclick="submit_message()">Submit</button>
                 </fieldset>
