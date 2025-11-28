@@ -1,4 +1,4 @@
-.body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: blue;
@@ -28,23 +28,20 @@
     float: left;
     border: solid black 2px;
     border-radius: 5px;
-    padding: 5px;
 }
 .email_form {
     width: 100%;
     float: center;
     border: solid black 2px;
     border-radius: 5px;
-    padding: 5px;
 }
 .message_form {
     width: 100%;
     float: right;
     border: solid black 2px;
     border-radius: 5px;
-    padding: 5px;
 }
-.h1 {
+h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-style: italic;
