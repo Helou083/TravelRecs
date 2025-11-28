@@ -1,48 +1,67 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: blue;
-    background-color: beige;
+    color: white;
+    background-image: url(./2147811269.jpg);
+    size: 100%;
 }
-.nav {
-    background-color: yellowgreen;
+nav {
+    background-color: lightcoral;
     width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-.button {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+    text-decoration: none;
     padding: 10px;
-    border: solid black 2px;
-    border-radius: 5px;
-    background-color: blue;
 }
-.contact_us {
-    float: center;
-    border: solid black 3px;
-    border-radius: 5px;
+.topdiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.name_form {
-    width: 100%;
-    float: left;
-    border: solid black 2px;
-    border-radius: 5px;
+.search_bar {
+    display: flex;
+    align-items: left;
+    gap: 10px;
 }
-.email_form {
-    width: 100%;
-    float: center;
-    border: solid black 2px;
-    border-radius: 5px;
-}
-.message_form {
-    width: 100%;
+#destination {
     float: right;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#search {
+    padding: 5px;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+#reset {
+    padding: 5px;
     border: solid black 2px;
     border-radius: 5px;
 }
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name_form {
+    width: 100%;
+    float: left;
+    border: solid lightcoral 2px;
+    border-radius: 10px;
+}
+.email_form {
+    width: 100%;
+    float: center;
+    border: solid lightcoral 2px;
+    border-radius: 10px;
+}
+.message_form {
+    width: 100%;
+    float: right;
+    border: solid lightcoral 2px;
+    border-radius: 10px;
 }
