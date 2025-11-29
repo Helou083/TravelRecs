@@ -4,6 +4,7 @@ body {
     color: white;
     background-image: url(./2147811269.jpg);
     size: 100%;
+    margin-left: 50px;
 }
 h1 {
     font-weight: bolder;
@@ -13,9 +14,9 @@ h1 {
 nav {
     background-color: lightcoral;
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: 0px;
     margin-right: 0;
     border: none;
     text-decoration: none;
@@ -59,24 +60,46 @@ nav {
     border-radius: 5px;
 }
 .about_us{
+    margin-left: 60px;
     display: flex;
     align-items: right;
     gap: 5px;
 }
 .our_team {
+    margin-left:60px;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
 .contact_us {
+    margin-left: 60px;
     margin-top: 20cm;
     margin-bottom: 20cm;
     padding: 20cm;
     display: flex;
     align-items: center;
     gap: 5px;
-    border: solid lightcoral 5px;
     border-radius: 10px;
 }
-
+.name_form {
+    display: flex;
+    align-items: right;
+    gap: 10px;
+}
+.name_form input {
+    display: flex;
+    border: solid black;
+    border-radius:10px;
+}
+.social_media {
+    height: 100%;
+    width: 40px;
+    position: fixed;
+    padding-top: 20px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: lightcoral;
+}
