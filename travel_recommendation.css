@@ -4,19 +4,18 @@ body {
     color: white;
     background-image: url(./2147811269.jpg);
     size: 100%;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 h1 {
     font-weight: bolder;
     font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 nav {
     background-color: lightcoral;
     width: 100%;
-    top: 0;
-    bottom: 0;
-    margin-left: 0px;
+    margin-left: -10px;
+    margin-top: -10px;
     margin-right: 0;
     border: none;
     text-decoration: none;
@@ -37,7 +36,7 @@ nav {
 .search_bar {
     display: flex;
     align-items: right;
-    gap: 10px;
+    margin-left: -10px;
 }
 .search_bar input {
     flex: 1;
@@ -94,7 +93,7 @@ nav {
 }
 .social_media {
     height: 100%;
-    width: 40px;
+    width: 50px;
     position: fixed;
     padding-top: 20px;
     z-index: 1;
