@@ -7,6 +7,7 @@ body {
     margin-left: 60px;
 }
 h1 {
+    font-size: 40px;: ;
     font-weight: bolder;
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -127,10 +128,9 @@ nav {
     align-items: right;
     gap: 10px;
 }
-.message_form input {
-    display: flex;
-    align-items: right;
-    border-radius: 10px;
+#submit {
+    border: solid black 2px;
+    border-radius: 5px;
 }
 
 .social_media {
