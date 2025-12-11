@@ -59,24 +59,37 @@ nav {
     border-radius: 5px;
 }
 .intro {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     font-style: italic;
-    text-align: ;
+    text-align:justify;
 }
-.about_us{
+.about_us { 
     margin-left: 60px;
     display: flex;
     align-items: right;
     gap: 5px;
     padding-bottom: 20cm;
 }
+.intro_2 {
+    font-size: 15px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align:justify;
+}
+ 
 .our_team {
     margin-left:60px;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
+}
+.worker {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
 }
 .contact_us {
     margin-left: 60px;
@@ -119,9 +132,7 @@ nav {
     align-items: right;
     border-radius: 10px;
 }
-.placeholder {
-    border-radius: 10px;
-}
+
 .social_media {
     height: 100%;
     width: 50px;
